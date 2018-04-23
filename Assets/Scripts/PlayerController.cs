@@ -30,7 +30,10 @@ public class PlayerController : MonoBehaviour {
 
         player.Move(movement * Time.deltaTime);
 
-        if (Input.GetButtonDown("Crouch")) crouch = !crouch;
+        if (Input.GetButtonDown("Crouch"))
+        {
+            crouch = !crouch;
+        }
 
         if (Input.GetAxis("Vertical") > 0 && !Input.GetButton("Run"))
         {
