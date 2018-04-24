@@ -44,6 +44,16 @@ public class PlayerController : MonoBehaviour {
             walking = false;
         }
 
+        if (Input.GetButton("Run"))
+        {
+            running = true;
+            crouch = false;
+        }
+        else
+        {
+            running = false;
+        }
+
         if (crouch == true)
         {
             GetComponent<CharacterController>().center = new Vector3(0, 0.5f, 0);
@@ -53,16 +63,6 @@ public class PlayerController : MonoBehaviour {
         {
             GetComponent<CharacterController>().center = new Vector3(0, 0.9f, 0);
             GetComponent<CharacterController>().height = 1.9f;
-        }
-
-        if (Input.GetButton("Run"))
-        {
-            running = true;
-            crouch = false;
-        }
-        else
-        {
-            running = false;
         }
 
         animator.SetBool("isRunning", running);
