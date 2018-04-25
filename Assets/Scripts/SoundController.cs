@@ -38,7 +38,7 @@ public class SoundController : MonoBehaviour
 
     void Start()
     {
-        Play("Storm");
+        Play("Thunder");
         Play("Theme1");
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Animator>();
     }

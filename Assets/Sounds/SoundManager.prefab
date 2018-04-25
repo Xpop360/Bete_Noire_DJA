@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1713962306263888}
+  m_IsPrefabParent: 1
+--- !u!1 &1713962306263888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4590507215782958}
+  - component: {fileID: 114263406095185454}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4590507215782958
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1713962306263888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.005854845, y: 2.1519992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114263406095185454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1713962306263888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84da554f10a74243b28325406c420c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - clip: {fileID: 8300000, guid: df835b2f155b89040af11c1a93bf0488, type: 3}
+    name: Thunder
+    loop: 1
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: ea8de716d5f03594db5a6b27976255ae, type: 3}
+    name: Smooth
+    loop: 0
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 8e6eb689cd05d134a9df580e2259df77, type: 3}
+    name: Theme1
+    loop: 1
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: e6284da79529987428324c09566ba777, type: 3}
+    name: Theme2
+    loop: 1
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 82fad1f5302f06b489cd10a2fc5f8301, type: 3}
+    name: Chase
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 08ab96387d9579e4193edc1afcc18a4b, type: 3}
+    name: Heart
+    loop: 1
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 5639b45f0b3c47f44bfa9ad00aed7715, type: 3}
+    name: Breathing
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: bccfebff00a2d714597a8fa291e7bf8f, type: 3}
+    name: Door
+    loop: 0
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 84079c0115ec801439db13e06700f0f4, type: 3}
+    name: Fallen
+    loop: 0
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b154acc67c8755e45a63313f95b210db, type: 3}
+    name: Footsteps1
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 156042a4b0e1b4f4e9b8b606942c3c90, type: 3}
+    name: Footsteps2
+    loop: 1
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: af5b8cd79184ce0469870658e2e65da2, type: 3}
+    name: Running1
+    loop: 1
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 0d70fa445df1a364b8742d3a95efbee1, type: 3}
+    name: Running2
+    loop: 1
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 28c8dad5bb2ccfc4e81d7f7040d4c29e, type: 3}
+    name: WhisperPlay
+    loop: 0
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: b40befd7a6e9ef144a38fc8e4e711e06, type: 3}
+    name: Whisper1
+    loop: 0
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: e1cddeb8569ba23499a220f16e5030c8, type: 3}
+    name: Whispers2
+    loop: 1
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  onceFootsteps: 1
