@@ -3,6 +3,7 @@
 public class PlayerController : MonoBehaviour {
     
     public Animator animator;
+    AnimatorStateInfo state;
 
     CharacterController player;
 
@@ -17,18 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        LR = speed * Input.GetAxis("Horizontal");
-        FB = speed * Input.GetAxis("Vertical");
-
-        yaw = Input.GetAxis("Mouse X") * rotationSpeed;
-
-        Vector3 movement = new Vector3(LR, 0.0f, FB);
-
-        transform.Rotate(new Vector3(0.0f, yaw, 0.0f));
         
-        movement = transform.rotation * movement;
-
-        player.Move(movement * Time.deltaTime);
 
         if (Input.GetButtonDown("Crouch"))
         {
@@ -68,5 +58,31 @@ public class PlayerController : MonoBehaviour {
         animator.SetBool("isRunning", running);
         animator.SetBool("isCrouching", crouch);
         animator.SetBool("isWalking", walking);
+
+        LR = speed * Input.GetAxis("Horizontal");
+        FB = speed * Input.GetAxis("Vertical");
+
+        yaw = Input.GetAxis("Mouse X") * rotationSpeed;
+
+        Vector3 movement = new Vector3(LR, 0.0f, FB);
+
+        transform.Rotate(new Vector3(0.0f, yaw, 0.0f));
+
+        movement = transform.rotation * movement;
+
+        player.Move(movement * Time.deltaTime);
+    }
+
+    void OnAnimatorMove()
+    {
+        state = animator.GetCurrentAnimatorStateInfo(0);
+        if (!state.IsTag("NoMoving"))
+        {
+            animator.ApplyBuiltinRootMotion();
+        }
+        else //detected animation tagged NoMoving where we don't want animation movement, doesn't apply movement
+        {
+            Debug.Log("No Moving");
+        }
     }
 }

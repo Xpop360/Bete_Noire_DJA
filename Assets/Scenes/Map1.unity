@@ -4355,6 +4355,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1231684948}
+    - target: {fileID: 20313606486408670, guid: aa0ccb8612faa1e48aabaa1b405abb60,
+        type: 2}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa0ccb8612faa1e48aabaa1b405abb60, type: 2}
   m_IsPrefabParent: 0
@@ -6901,6 +6906,11 @@ Prefab:
         type: 2}
       propertyPath: m_SkinWidth
       value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 95401667066628342, guid: d405c9bcd6fb99b47a52c71a8f525605,
+        type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
