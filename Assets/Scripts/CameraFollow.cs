@@ -5,6 +5,7 @@ public class CameraFollow : MonoBehaviour {
     Transform target;
 
     float clap, speed = 2.0f;
+    float maxY, minY;
 
     Vector3 Look;
     
@@ -13,6 +14,8 @@ public class CameraFollow : MonoBehaviour {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         Cursor.lockState = CursorLockMode.Locked;
         transform.rotation = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Transform>().rotation;
+        maxY = 50;
+        minY = -90;
     }
 
     void Update ()
@@ -25,15 +28,15 @@ public class CameraFollow : MonoBehaviour {
 
         clap -= speed * Input.GetAxis("Mouse Y");
 
-        if (clap > 90)
+        if (clap > maxY)
         {
-            clap = 90;
-            Look.x = 90;
+            clap = maxY;
+            Look.x = maxY;
         }
-        else if (clap < -90)
+        else if (clap < minY)
         {
-            clap = -90;
-            Look.x = 270;
+            clap = minY;
+            Look.x = minY;
         }
 
         transform.rotation = Quaternion.Euler(Look);
