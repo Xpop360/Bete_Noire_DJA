@@ -48,7 +48,7 @@ public class SoundController : MonoBehaviour
     {
         if (playerAnimator.GetBool("isWalking"))
         {
-            Debug.Log("Sounding Footsteps");
+            //Debug.Log("Sounding Footsteps");
             if (onceFootsteps)
             {
                 Play("Footsteps1");

@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour {
         }
         else //detected animation tagged NoMoving where we don't want animation movement, doesn't apply movement
         {
-            Debug.Log("No Moving");
+            //Debug.Log("No Moving");
         }
     }
 }
