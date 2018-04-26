@@ -17,6 +17,7 @@ public class SoundController : MonoBehaviour
         if(instance==null)
         {
             instance = this;
+            this.tag = "SoundManager";
         }
         else
         {
