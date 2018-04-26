@@ -6,14 +6,17 @@ public class PlayerController : MonoBehaviour {
     AnimatorStateInfo state;
 
     CharacterController player;
+    Transform lookAt;
 
     float FB, LR, yaw, rotationSpeed = 2.0f, speed = 0.1f;
 
-    bool crouch = false, running = false, walking = false;
+    [HideInInspector]
+    public bool crouch = false, running = false, walking = false;
 
     void Start()
     {
         player = GetComponent<CharacterController>();
+        lookAt = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()

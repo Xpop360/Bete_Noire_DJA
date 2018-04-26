@@ -6,12 +6,15 @@ public class CameraFollow : MonoBehaviour {
 
     float clap, speed = 2.0f;
     float maxY, minY;
+    public Vector3 cameraCrouchOffSet = Vector3.zero;
 
     Vector3 Look;
+    GameObject Player;
     
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        Player = GameObject.FindGameObjectWithTag("Player");
+        target = Player.transform;
         Cursor.lockState = CursorLockMode.Locked;
         transform.rotation = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Transform>().rotation;
         maxY = 50;
@@ -20,7 +23,14 @@ public class CameraFollow : MonoBehaviour {
 
     void Update ()
     {
-        transform.position = target.position;
+        if(Player.GetComponentInParent<PlayerController>().crouch)
+        {
+            transform.position = target.position - cameraCrouchOffSet;
+        }
+        else
+        {
+            transform.position = target.position;
+        }
         Look = transform.rotation.eulerAngles;
 
         Look.y += speed * Input.GetAxis("Mouse X");

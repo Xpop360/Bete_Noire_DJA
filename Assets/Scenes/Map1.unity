@@ -4648,6 +4648,11 @@ Prefab:
     - target: {fileID: 20313606486408670, guid: aa0ccb8612faa1e48aabaa1b405abb60,
         type: 2}
       propertyPath: near clip plane
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114293453515328800, guid: aa0ccb8612faa1e48aabaa1b405abb60,
+        type: 2}
+      propertyPath: cameraCrouchOffSet.y
       value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6943,6 +6948,14 @@ Prefab:
     - target: {fileID: 95401667066628342, guid: d405c9bcd6fb99b47a52c71a8f525605,
         type: 2}
       propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587129152648804, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816057059788832, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
