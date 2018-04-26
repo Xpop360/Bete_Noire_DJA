@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &21330539
 Transform:
   m_ObjectHideFlags: 0
@@ -2857,7 +2857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4580220760457062, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_RootOrder
-      value: 54
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 1063720436450340, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -4581,7 +4581,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4580220760457062, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_RootOrder
-      value: 52
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 1063720436450340, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_Name
@@ -5170,7 +5170,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4580220760457062, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_RootOrder
-      value: 51
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 1063720436450340, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_Name
@@ -10823,7 +10823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4580220760457062, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_RootOrder
-      value: 53
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1063720436450340, guid: fdec2343e28e33541bc788a20ed6fa4a, type: 2}
       propertyPath: m_Name
