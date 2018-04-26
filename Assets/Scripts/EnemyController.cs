@@ -27,9 +27,9 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(target.transform.position, transform.position);
-        //agent.CalculatePath(target.transform.position, agent.path);
+        agent.CalculatePath(target.transform.position, agent.path);
 
-        if (distance <= seeDist && agent.path.status != NavMeshPathStatus.PathComplete)
+        if (distance <= seeDist && agent.path.status == NavMeshPathStatus.PathComplete)
         {
             SoundManager.GetComponent<SoundController>().Stop("Theme1");
             SoundManager.GetComponent<SoundController>().Stop("Thunder");
