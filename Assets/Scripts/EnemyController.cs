@@ -9,35 +9,36 @@ public class EnemyController : MonoBehaviour
     public float seeDist, stopdist;
     float distance;
     public float speed;
+    NavMeshPath path;
 
     public GameObject target;
     NavMeshAgent agent;
     GameObject SoundManager;
-    NavMeshPath path;
+    NavMeshPath Newpath;
 
-    // Use this for initialization
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
         SoundManager = GameObject.FindGameObjectWithTag("SoundManager");
+        Newpath = new NavMeshPath();
     }
 
-    // Update is called once per frame
     void Update()
     {
         distance = Vector3.Distance(target.transform.position, transform.position);
-        //agent.CalculatePath(target.transform.position, agent.path);
+        agent.CalculatePath(target.transform.position, Newpath);
 
-        if (distance <= seeDist)// && agent.path.status == NavMeshPathStatus.PathPartial)
+        if (distance <= seeDist && Newpath.status == NavMeshPathStatus.PathComplete)
         {
+            agent.isStopped = false;
             agent.SetDestination(target.transform.position);
             GetComponent<AudioSource>().enabled = true;
             if (distance <= stopdist)
             {
-                //attack
-                //face target when attacking
                 agent.isStopped = true;
+                agent.ResetPath();
+                //attack
                 FaceTarget();
                 Debug.Log("I'm here");
             }

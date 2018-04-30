@@ -6958,7 +6958,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.085
+      value: 1.86
       objectReference: {fileID: 0}
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6966,7 +6966,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.247
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7124,7 +7124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1706266703562344, guid: 591fe9645c8807a46afeb40486ba46ac, type: 2}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4026438240102090, guid: 591fe9645c8807a46afeb40486ba46ac, type: 2}
       propertyPath: m_LocalScale.x
@@ -9866,6 +9866,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.949547, y: 2, z: 1.011095}
   m_Center: {x: -0.0000014901161, y: 0, z: -0.0000015199184}
+--- !u!114 &1576606236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1576606230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222393e6380a6b141bbe539ac6b4e67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intervalo: 0.1
 --- !u!1 &1577759582
 GameObject:
   m_ObjectHideFlags: 0
@@ -11278,7 +11290,7 @@ NavMeshObstacle:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1840956494}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Shape: 1
   m_Extents: {x: 0.5, y: 0.5, z: 0.5}
