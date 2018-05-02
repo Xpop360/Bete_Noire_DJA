@@ -2239,7 +2239,11 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
+<<<<<<< HEAD
   randomSeed: -1403667253
+=======
+  randomSeed: -544136147
+>>>>>>> 6f98c9f5b57456fb2eff7134b10677c91a2e49a4
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5628,9 +5632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seeDist: 2
   stopdist: 0.3
-  speed: 0.2
+  speed: 0.5
   target: {fileID: 1785146904}
-  animator: {fileID: 0}
+  animator: {fileID: 263058569}
 --- !u!136 &263058566
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5751,7 +5755,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 79dc19043adbb9d4682bf498f13d2fb1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
