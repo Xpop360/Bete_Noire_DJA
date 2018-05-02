@@ -36,6 +36,7 @@ public class EnemyController : MonoBehaviour
             agent.isStopped = false;
             agent.SetDestination(target.transform.position);
             GetComponent<AudioSource>().enabled = true;
+            animator.SetInteger("Speed", 2);
             if (distance <= stopdist)
             {
                 agent.isStopped = true;
@@ -43,6 +44,7 @@ public class EnemyController : MonoBehaviour
                 //attack
                 FaceTarget();
                 Debug.Log("I'm here");
+                animator.SetInteger("Speed", 0);
             }
         }
         else
@@ -50,9 +52,8 @@ public class EnemyController : MonoBehaviour
             agent.isStopped = false;
             agent.ResetPath();
             GetComponent<AudioSource>().enabled = false;
+            animator.SetInteger("Speed", 0);
         }
-
-        animator.SetFloat("Distance", distance);
     }
 
     void FaceTarget()

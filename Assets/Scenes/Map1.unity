@@ -2239,7 +2239,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -544136147
+  randomSeed: -318444536
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5612,7 +5612,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.36
-  m_BaseOffset: 1
+  m_BaseOffset: 0.17
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &263058565
