@@ -2173,7 +2173,7 @@ GameObject:
   - component: {fileID: 263058563}
   - component: {fileID: 263058562}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2239,7 +2239,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -882881576
+  randomSeed: -544136147
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5628,9 +5628,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seeDist: 2
   stopdist: 0.3
-  speed: 0.2
+  speed: 0.5
   target: {fileID: 1785146904}
-  animator: {fileID: 0}
+  animator: {fileID: 263058569}
 --- !u!136 &263058566
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5650,7 +5650,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 263058561}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 82fad1f5302f06b489cd10a2fc5f8301, type: 3}
@@ -5751,7 +5751,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 79dc19043adbb9d4682bf498f13d2fb1, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -8273,8 +8273,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1851364247}
+  m_Children: []
   m_Father: {fileID: 1272688113}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

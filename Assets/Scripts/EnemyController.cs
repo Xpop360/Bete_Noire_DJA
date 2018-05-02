@@ -51,6 +51,8 @@ public class EnemyController : MonoBehaviour
             agent.ResetPath();
             GetComponent<AudioSource>().enabled = false;
         }
+
+        animator.SetFloat("Distance", distance);
     }
 
     void FaceTarget()
