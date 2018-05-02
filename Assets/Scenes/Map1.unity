@@ -2178,7 +2178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &263058562
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -2239,7 +2239,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -318444536
+  randomSeed: -685874886
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6778,7 +6778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345fc6a75e4c43b4fa27d2cd1defca39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0.3
+  radius: 0.5
   player: {fileID: 1785146904}
   inRadius: 0
 --- !u!4 &348757493
@@ -7948,6 +7948,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2046beae207d6db4199c40c4d14f4141, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &717740368 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1026694297862922, guid: c80d23fb2c9e32e4582d151195b428a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1063735032}
+--- !u!114 &717740369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717740368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e10f385cf412d2468f87c8bce9b47d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &720578793
 Prefab:
   m_ObjectHideFlags: 0
