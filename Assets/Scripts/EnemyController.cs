@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
     GameObject SoundManager;
     NavMeshPath Newpath;
 
+    public Animator animator;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
