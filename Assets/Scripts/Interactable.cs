@@ -12,14 +12,11 @@ public class Interactable : MonoBehaviour
 
     void Start()
     {
-        radius = 0.3f;
         inRadius = false;
-        Debug.Log(player);
     }
 
     void Update()
     {
-        Debug.Log(player);
         distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance < radius)
         {

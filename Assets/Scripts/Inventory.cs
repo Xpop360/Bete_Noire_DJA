@@ -36,7 +36,7 @@ public class Inventory : MonoBehaviour {
 
     void Update()
     {
-        Updateicons();
+
     }
 
     public void Updateicons()
@@ -45,6 +45,7 @@ public class Inventory : MonoBehaviour {
         foreach(PickUps item in inventory)
         {
             panel = panels.GetComponentInChildren<RectTransform>().gameObject.transform.Find("Panel (" + i + ")").GetChild(0).gameObject;
+            panel.GetComponent<Image>().sprite = item.icon;
             panel.GetComponent<Image>().enabled = true;
             i++;
         }
@@ -57,9 +58,10 @@ public class Inventory : MonoBehaviour {
 
     public bool AddItem(PickUps item)
     {
-        if (inventory.Count + 1 < maxSpace)
+        if (inventory.Count + 1 <= maxSpace)
         {
             inventory.Add(item);
+            Updateicons();
             return true;
         }
         return false;
@@ -67,6 +69,10 @@ public class Inventory : MonoBehaviour {
 
     public void RemoveItem(PickUps item)
     {
-        inventory.Remove(item);
+        if(inventory.Contains(item))
+        {
+            inventory.Remove(item);
+            Updateicons();
+        }
     }
 }

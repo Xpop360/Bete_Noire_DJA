@@ -9,6 +9,7 @@ public class SoundController : MonoBehaviour
     Animator playerAnimator;
 
     public static SoundController instance;
+    [HideInInspector]
     public bool onceFootsteps = true;
 
     // Use this for initialization

@@ -8,31 +8,52 @@ public class EnemyController : MonoBehaviour
 
     public float seeDist, stopdist;
     float distance;
-    public float speed;
+    public float chaseSpeed, normalSpeed;
+    bool chasing = false;
     NavMeshPath path;
 
     public GameObject target;
     NavMeshAgent agent;
     GameObject SoundManager;
     NavMeshPath Newpath;
+    int i = 0;
 
     public Animator animator;
+
+    [HideInInspector]
+    public GameObject[] intPoints;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.speed = speed;
+        agent.speed = chaseSpeed;
         SoundManager = GameObject.FindGameObjectWithTag("SoundManager");
         Newpath = new NavMeshPath();
+        intPoints = GameObject.FindGameObjectsWithTag("intPoint");
     }
 
     void Update()
+    {
+        ChaseTestandChase();
+        if(chasing)
+        {
+            agent.speed = chaseSpeed;
+        }
+        else
+        {
+            agent.speed = normalSpeed;
+            FollowPath();
+        }
+    }
+
+    void ChaseTestandChase()
     {
         distance = Vector3.Distance(target.transform.position, transform.position);
         agent.CalculatePath(target.transform.position, Newpath);
 
         if (distance <= seeDist && Newpath.status == NavMeshPathStatus.PathComplete)
         {
+            chasing = true;
             agent.isStopped = false;
             agent.SetDestination(target.transform.position);
             GetComponent<AudioSource>().enabled = true;
@@ -49,11 +70,30 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            chasing = false;
             agent.isStopped = false;
             agent.ResetPath();
             GetComponent<AudioSource>().enabled = false;
             animator.SetInteger("Speed", 0);
         }
+    }
+
+    void FollowPath()
+    {
+        if (Vector3.Distance(intPoints[i].transform.position, transform.position) <= agent.stoppingDistance)
+        {
+            animator.SetInteger("Speed", 0);
+            if (i == intPoints.Length - 1)
+            {
+                i = 0;
+            }
+            else
+            {
+                i++;
+            }
+        }
+        animator.SetInteger("Speed", 1);
+        agent.SetDestination(intPoints[i].transform.position);
     }
 
     void FaceTarget()
