@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Linq;
 
 public class EnemyController : MonoBehaviour
 {
@@ -29,7 +30,8 @@ public class EnemyController : MonoBehaviour
         agent.speed = chaseSpeed;
         SoundManager = GameObject.FindGameObjectWithTag("SoundManager");
         Newpath = new NavMeshPath();
-        intPoints = GameObject.FindGameObjectsWithTag("intPoint");
+        //gets all by alphabetical order
+        intPoints = GameObject.FindGameObjectsWithTag("intPoint").OrderBy(go => go.name).ToArray();
     }
 
     void Update()
