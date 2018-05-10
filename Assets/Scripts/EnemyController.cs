@@ -6,9 +6,8 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
 
-    public float seeDist, stopdist;
+    public float seeDist, stopdist, speed;
     float distance;
-    public float speed;
     NavMeshPath path;
 
     public GameObject target;
