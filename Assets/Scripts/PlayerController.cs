@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour {
 
         Vector3 movement = new Vector3(LR, 0.0f, FB);
 
-        transform.Rotate(new Vector3(0.0f, yaw, 0.0f));
+        if(!PauseMenu.gamePause) transform.Rotate(new Vector3(0.0f, yaw, 0.0f));
 
         movement = transform.rotation * movement;
 
