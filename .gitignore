@@ -33,3 +33,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 Assets/Enemy/Enemy Animator.controller
+Assets/Scenes/Map1.unity

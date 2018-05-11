@@ -31,6 +31,7 @@ public class CameraFollow : MonoBehaviour {
         {
             transform.position = target.position;
         }
+
         Look = transform.rotation.eulerAngles;
 
         Look.y += speed * Input.GetAxis("Mouse X");
@@ -48,7 +49,10 @@ public class CameraFollow : MonoBehaviour {
             clap = minY;
             Look.x = minY;
         }
-
-        transform.rotation = Quaternion.Euler(Look);
+        
+        if (!PauseMenu.gamePause)
+        {
+            transform.rotation = Quaternion.Euler(Look);
+        }
     }
 }

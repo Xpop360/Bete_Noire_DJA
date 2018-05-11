@@ -9,11 +9,8 @@ public class EnemyController : MonoBehaviour
 
     public float seeDist, stopdist, speed;
     float distance;
-<<<<<<< HEAD
-=======
     public float chaseSpeed, normalSpeed;
     bool chasing = false;
->>>>>>> 32926d5c0775ca7793eea006f2aedf43b883646d
     NavMeshPath path;
 
     public GameObject target;
