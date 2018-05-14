@@ -7,8 +7,7 @@ public class Inventory : MonoBehaviour {
 
     //public static Inventory instance;
 
-    [HideInInspector]
-    public List<PickUps> inventory;
+    List<PickUps> inventory;
     int maxSpace = 3;
     GameObject panels;
     GameObject panel;
