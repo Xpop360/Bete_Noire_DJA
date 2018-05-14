@@ -9,6 +9,8 @@ TagManager:
   - Inventory
   - InventoryUI
   - intPoint
+  - Enemy
+  - PlayerTrigger
   layers:
   - Default
   - TransparentFX

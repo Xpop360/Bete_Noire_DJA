@@ -32,6 +32,11 @@ public class EnemyController : MonoBehaviour
         Newpath = new NavMeshPath();
         //gets all by alphabetical order
         intPoints = GameObject.FindGameObjectsWithTag("intPoint").OrderBy(go => go.name).ToArray();
+        for(int i=0;i<intPoints.Length;i++)
+        {
+            intPoints[i].GetComponent<MeshRenderer>().enabled = false;
+        }
+        gameObject.SetActive(false);
     }
 
     void Update()
