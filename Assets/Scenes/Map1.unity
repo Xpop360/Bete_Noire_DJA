@@ -3015,7 +3015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!198 &263058562
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -3076,7 +3076,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 686954123
+  randomSeed: 1470173852
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6603,7 +6603,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 263058561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.211, z: 1.411}
+  m_LocalPosition: {x: -11.11, y: 0, z: 4.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 540174156}
@@ -9604,6 +9604,16 @@ Prefab:
     - target: {fileID: 4590507215782958, guid: 5df44a4ee2172f445a48f2c652e0256b, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[9].volume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df44a4ee2172f445a48f2c652e0256b, type: 2}
