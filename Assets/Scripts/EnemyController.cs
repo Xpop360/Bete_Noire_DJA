@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.speed = chaseSpeed;
+        agent.speed = normalSpeed;
         SoundManager = GameObject.FindGameObjectWithTag("SoundManager");
         Newpath = new NavMeshPath();
         //gets all by alphabetical order
