@@ -34,3 +34,5 @@ sysinfo.txt
 *.unitypackage
 Assets/Enemy/Enemy Animator.controller
 Assets/Scenes/Map1.unity
+*.unity
+*.unity
