@@ -26,17 +26,16 @@ public class PlayerController : MonoBehaviour {
             crouch = !crouch;
         }
 
-        if (Input.GetButton("Vertical") && !Input.GetButton("Run"))
+        if (Input.GetAxis("Vertical") > 0 && !Input.GetButton("Run"))
         {
             walking = true;
-            animator.SetFloat("walk", Input.GetAxis("Vertical"));
         }
         else
         {
             walking = false;
         }
 
-        if (Input.GetButton("Run") && Input.GetButton("Vertical"))
+        if (Input.GetButton("Run"))
         {
             running = true;
             crouch = false;
