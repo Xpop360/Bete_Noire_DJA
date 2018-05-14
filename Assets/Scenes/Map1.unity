@@ -3244,9 +3244,15 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 55d3caa... Map
 >>>>>>> b2393d9ba25c1377977827b7aa8d14bcc5585304
+=======
+>>>>>>> parent of 55d3caa... Map
+=======
+>>>>>>> parent of 0e0b157... Player Animator
+>>>>>>> 74340cd227365558b2d0c8bc4e525009c2f014f4
 --- !u!198 &263058562
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -10775,6 +10781,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 0.9000002, y: 0.5, z: 0.12000003}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &444654868
@@ -37639,6 +37646,8 @@ MonoBehaviour:
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+=======
+>>>>>>> parent of 0e0b157... Player Animator
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:

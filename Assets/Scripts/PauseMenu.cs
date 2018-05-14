@@ -6,8 +6,6 @@ public class PauseMenu : MonoBehaviour {
     public static bool gamePause = false;
     public GameObject pauseMenuUI;
 
-    SoundController sound;
-
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Escape))
             if (gamePause)
