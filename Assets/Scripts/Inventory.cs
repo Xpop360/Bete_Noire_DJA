@@ -35,11 +35,6 @@ public class Inventory : MonoBehaviour {
     //    DontDestroyOnLoad(gameObject);
     //}
 
-    void Update()
-    {
-
-    }
-
     public void Updateicons()
     {
         int i = 0;

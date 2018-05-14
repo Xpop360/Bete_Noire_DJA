@@ -220,7 +220,7 @@ GameObject:
   m_Name: Room1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &20176539
@@ -1631,7 +1631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &81981723
 Transform:
   m_ObjectHideFlags: 0
@@ -1646,8 +1646,12 @@ Transform:
   - {fileID: 21330539}
   - {fileID: 1053621068}
   - {fileID: 1885452412}
+  - {fileID: 1980299812}
+  - {fileID: 743867232}
+  - {fileID: 568850131}
+  - {fileID: 2104945330}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &84568753
 GameObject:
@@ -3111,7 +3115,7 @@ GameObject:
   m_Name: Room4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &179543925
@@ -3475,7 +3479,7 @@ GameObject:
   m_Name: Floor-Wood (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &191138590
@@ -3653,7 +3657,7 @@ GameObject:
   m_Name: Floor-Wood (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &195566716
@@ -3974,7 +3978,7 @@ GameObject:
   m_Name: Floor-Wood (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &210584081
@@ -4417,7 +4421,7 @@ GameObject:
   m_Name: Floor-Wood (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &238557214
@@ -4746,7 +4750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!198 &263058562
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4807,7 +4811,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 447557763
+  randomSeed: -2117844117
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8334,7 +8338,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 263058561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: 0.211, z: 0.29}
+  m_LocalPosition: {x: -3.847, y: 0.211, z: 2.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 540174156}
@@ -9120,7 +9124,7 @@ GameObject:
   m_Name: Floor-Wood (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &301222414
@@ -9849,7 +9853,7 @@ GameObject:
   m_Name: Floor-Wood (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &331628818
@@ -10500,7 +10504,7 @@ GameObject:
   m_Name: Floor-Wood (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &368085225
@@ -11306,7 +11310,7 @@ GameObject:
   m_Name: Floor-Wood (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &411309222
@@ -11767,7 +11771,7 @@ GameObject:
   m_Name: Floor-Wood (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &435488886
@@ -11856,7 +11860,7 @@ GameObject:
   m_Name: Floor-Wood (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &437701833
@@ -12232,7 +12236,7 @@ GameObject:
   m_Name: Floor-Wood (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &445973850
@@ -13102,7 +13106,7 @@ GameObject:
   m_Name: Floor-Wood (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &535026482
@@ -13462,7 +13466,7 @@ GameObject:
   m_Name: Floor-Wood (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &548509460
@@ -13756,6 +13760,90 @@ Prefab:
       propertyPath: m_Name
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: 1411998291063404, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968487046501924, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999391158564262, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844431962400570, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309613334563084, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1074285070424476, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523931518177716, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110265565485492, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695647726680740, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364794436527388, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215362840690136, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1637907303960588, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551450452227560, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080833423113592, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662852859693854, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902745085633372, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861525949107982, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1721085144902670, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850372498989118, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397115555942194, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013438950176838, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5d94fbf621743b4d97f032a640972b4, type: 2}
   m_IsPrefabParent: 0
@@ -13869,7 +13957,7 @@ GameObject:
   m_Name: Floor-Wood (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &564438964
@@ -14066,12 +14154,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 568850128}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.949, y: 0.185, z: 1.821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.179655, y: 3.3129559, z: -7.7978277}
   m_LocalScale: {x: -0.2172193, y: -0.21721925, z: -0.21721925}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 81981723}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569907165
 GameObject:
@@ -14089,7 +14177,7 @@ GameObject:
   m_Name: Floor-Wood (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &569907166
@@ -14714,6 +14802,14 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1909897399176234, guid: 904ea50f0135f0042a675e339f2edbc5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816103589772010, guid: 904ea50f0135f0042a675e339f2edbc5, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 904ea50f0135f0042a675e339f2edbc5, type: 2}
   m_IsPrefabParent: 0
@@ -15115,7 +15211,7 @@ GameObject:
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &666382256
@@ -15163,7 +15259,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &666823568
 Transform:
@@ -15198,7 +15294,7 @@ GameObject:
   m_Name: Floor-Wood (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &666999290
@@ -15725,7 +15821,7 @@ GameObject:
   m_Name: Floor-Wood (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &690527660
@@ -16324,7 +16420,7 @@ GameObject:
   m_Name: Floor-Wood (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &727534052
@@ -16903,12 +16999,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 743867229}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.77900004, y: 0.185, z: 0.073}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.009655, y: 3.3129559, z: -9.545828}
   m_LocalScale: {x: -0.2172193, y: -0.21721925, z: -0.21721925}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 81981723}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749725675
 GameObject:
@@ -17599,7 +17695,7 @@ GameObject:
   m_Name: Floor-Wood (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &800188913
@@ -17952,7 +18048,7 @@ GameObject:
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &821073844
@@ -18003,7 +18099,7 @@ GameObject:
   m_Name: Floor-Wood (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &823651858
@@ -18256,7 +18352,7 @@ GameObject:
   m_Name: Floor-Wood (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &840337880
@@ -18523,7 +18619,7 @@ GameObject:
   m_Name: Floor-Wood (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &865833498
@@ -18798,7 +18894,7 @@ GameObject:
   m_Name: Floor-Wood (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &877036050
@@ -20019,7 +20115,7 @@ GameObject:
   m_Name: Floor-Wood (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &928791904
@@ -20104,7 +20200,7 @@ GameObject:
   m_Name: AcessCorridorH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &932640483
@@ -20862,7 +20958,7 @@ GameObject:
   m_Name: Floor-Wood (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &978655447
@@ -21498,7 +21594,7 @@ GameObject:
   m_Name: Floor-Wood (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1007777532
@@ -22129,7 +22225,7 @@ GameObject:
   m_Name: Floor-Wood (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1049107465
@@ -22676,7 +22772,7 @@ GameObject:
   m_Name: Floor-Wood (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1078296702
@@ -23673,7 +23769,7 @@ GameObject:
   m_Name: Floor-Wood (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1137065838
@@ -24120,7 +24216,7 @@ GameObject:
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1184938532
@@ -24365,7 +24461,7 @@ GameObject:
   m_Name: Floor-Wood (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1205567771
@@ -24861,15 +24957,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.501
+      value: -12.18
       objectReference: {fileID: 0}
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.177
+      value: -0.197
       objectReference: {fileID: 0}
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.46
+      value: 4.09
       objectReference: {fileID: 0}
     - target: {fileID: 4661494322209314, guid: d405c9bcd6fb99b47a52c71a8f525605, type: 2}
       propertyPath: m_LocalRotation.x
@@ -25095,7 +25191,7 @@ GameObject:
   m_Name: Floor-Wood (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1257985687
@@ -25846,7 +25942,7 @@ GameObject:
   m_Name: Floor-Wood (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1294344086
@@ -26473,7 +26569,7 @@ GameObject:
   m_Name: Floor-Wood (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1335389540
@@ -27430,6 +27526,78 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1576401863082940, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028044652846080, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729591361046582, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856673343963180, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411638481999264, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899970067821788, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934532776120936, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125204781693912, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290145569378910, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206662041120218, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141317742327638, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1381282551392238, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575977515497556, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400186876204046, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592507703737768, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481199084780058, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206533165876612, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640169764539026, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cd4732d496975ea4db346deef8d4c4f7, type: 2}
   m_IsPrefabParent: 0
@@ -28106,7 +28274,7 @@ GameObject:
   m_Name: Floor-Wood (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1433801135
@@ -28977,7 +29145,7 @@ GameObject:
   m_Name: Floor-Wood (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1467671869
@@ -29979,7 +30147,7 @@ GameObject:
   m_Name: Floor-Wood (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1504169453
@@ -30139,7 +30307,7 @@ GameObject:
   m_Name: Floor-Wood (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1508804931
@@ -30404,7 +30572,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1531632309
 Transform:
@@ -31426,7 +31594,7 @@ GameObject:
   m_Name: Floor-Wood (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1595337983
@@ -32081,7 +32249,7 @@ GameObject:
   m_Name: Floor-Wood (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1632545407
@@ -32588,6 +32756,30 @@ Prefab:
     - target: {fileID: 400002, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5712aa51b3a6c0e4e8b677b02494567f, type: 3}
@@ -33662,7 +33854,7 @@ GameObject:
   m_Name: AccessCorridorV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1729073504
@@ -35262,7 +35454,7 @@ GameObject:
   m_Name: Floor-Wood (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1815440391
@@ -35815,7 +36007,7 @@ GameObject:
   m_Name: Floor-Wood (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1845992425
@@ -36025,7 +36217,7 @@ GameObject:
   m_Name: Floor-Wood (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1866622443
@@ -36646,7 +36838,7 @@ Prefab:
     - target: {fileID: 114010023681461766, guid: 68afbe749ad3ac94d8b30b1a93505d1f,
         type: 2}
       propertyPath: locked
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4197800408497708, guid: 68afbe749ad3ac94d8b30b1a93505d1f, type: 2}
       propertyPath: m_LocalScale.x
@@ -36676,7 +36868,7 @@ GameObject:
   m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1882520025
@@ -37231,7 +37423,7 @@ GameObject:
   m_Name: AccessCorridorCurveRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1917782080
@@ -37644,19 +37836,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 81981723}
     m_Modifications:
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.674
+      value: 12.9046545
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.185
+      value: 3.3129559
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.073
+      value: -9.545828
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalRotation.x
@@ -37676,7 +37868,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1423734665388644, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_IsActive
@@ -37802,7 +37994,7 @@ GameObject:
   m_Name: Floor-Wood (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1951874881
@@ -37891,7 +38083,7 @@ GameObject:
   m_Name: Floor-Wood (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1956401730
@@ -38248,6 +38440,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968670182}
   m_Mesh: {fileID: 4300000, guid: 35b4e51cccb1aef4c97d8691e64bcdb4, type: 3}
+--- !u!4 &1980299812 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40,
+    type: 2}
+  m_PrefabInternal: {fileID: 1945101914}
 --- !u!1 &1989660770
 GameObject:
   m_ObjectHideFlags: 0
@@ -39064,7 +39261,7 @@ GameObject:
   m_Name: Floor-Wood (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2053024085
@@ -39719,7 +39916,7 @@ GameObject:
   m_Name: Floor-Wood (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2088199137
@@ -39986,7 +40183,7 @@ GameObject:
   m_Name: Floor-Wood (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2093824159
@@ -40072,7 +40269,7 @@ GameObject:
   m_Name: Floor Entrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2095765745
@@ -40277,12 +40474,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2104945327}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.673, y: 0.185, z: 1.904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.903655, y: 3.3129559, z: -7.7148275}
   m_LocalScale: {x: -0.2172193, y: -0.21721925, z: -0.21721925}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 81981723}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2105576653
 GameObject:
@@ -40724,7 +40921,7 @@ GameObject:
   m_Name: AccessCorridorCurveRight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2120739413
@@ -40954,7 +41151,7 @@ GameObject:
   m_Name: Floor-Wood (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2141938421

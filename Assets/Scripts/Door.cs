@@ -7,11 +7,13 @@ public class Door : MonoBehaviour
     Animator animator;
     Interactable inter;
     public bool locked;
+    Inventory inv;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         inter = GetComponentInParent<Interactable>();
+        inv = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
     }
 
     void Update()
@@ -22,10 +24,8 @@ public class Door : MonoBehaviour
             {
                 locked = !CheckForKey();
             }
-            Debug.Log("In Radius");
             if (Input.GetKeyDown(KeyCode.E) && !locked)
             {
-                Debug.Log("Interacting");
                 animator.SetBool("Open", !animator.GetBool("Open"));
             }
         }
@@ -33,11 +33,12 @@ public class Door : MonoBehaviour
 
     bool CheckForKey()
     {
-        foreach (PickUps i in GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().inventory)
+        foreach (PickUps i in inv.inventory)
         {
             if (i.name == "Key")
             {
-                GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().RemoveItem(i);
+                inv.RemoveItem(i);
+                inv.Updateicons();
                 return true;
             }
         }
