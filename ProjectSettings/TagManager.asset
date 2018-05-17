@@ -11,6 +11,7 @@ TagManager:
   - intPoint
   - Enemy
   - PlayerTrigger
+  - PuzzleUI
   layers:
   - Default
   - TransparentFX
