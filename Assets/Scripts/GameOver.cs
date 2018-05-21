@@ -1,17 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameOver : MonoBehaviour {
 
-    public GameObject gameOver;
+    public GameObject gameOver, gameOverUI;
     public Animator animator;
 
-	void Update () {
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            gameObject.SetActive(true);
-            animator.SetTrigger("gameover");
+            gameOver.SetActive(true);
         }
-	}
+
+        if (GameOverAnimation.end) gameOverUI.SetActive(GameOverAnimation.end);
+    }
 }
