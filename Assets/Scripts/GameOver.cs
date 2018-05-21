@@ -7,9 +7,9 @@ public class GameOver : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (EnemyController.lose)
         {
-            gameOver.SetActive(true);
+            gameOver.SetActive(EnemyController.lose);
         }
 
         if (GameOverAnimation.end) gameOverUI.SetActive(GameOverAnimation.end);

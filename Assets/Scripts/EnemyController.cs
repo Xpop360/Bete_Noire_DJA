@@ -24,6 +24,8 @@ public class EnemyController : MonoBehaviour
     [HideInInspector]
     public GameObject[] intPoints;
 
+    public static bool lose = false;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -72,6 +74,7 @@ public class EnemyController : MonoBehaviour
                 //attack
                 FaceTarget();
                 Debug.Log("I'm here");
+                lose = true;
                 animator.SetInteger("Speed", 0);
             }
         }
