@@ -9,6 +9,7 @@ public class Trigger : MonoBehaviour
     void Start()
     {
         enemy = GameObject.FindGameObjectWithTag("Enemy");
+        enemy.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -16,6 +17,7 @@ public class Trigger : MonoBehaviour
         Debug.Log(other.tag + " entered");
         if(other.tag=="PlayerTrigger")
         {
+            Debug.Log(enemy.name + " released");
             enemy.SetActive(true);
             GetComponent<AudioSource>().enabled = true;
         }

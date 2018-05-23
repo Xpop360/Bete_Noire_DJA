@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Linq;
 
@@ -23,7 +21,7 @@ public class EnemyController : MonoBehaviour
 
     [HideInInspector]
     public GameObject[] intPoints;
-
+    [HideInInspector]
     public static bool lose = false;
 
     void Start()
@@ -38,7 +36,6 @@ public class EnemyController : MonoBehaviour
         {
             intPoints[i].GetComponent<MeshRenderer>().enabled = false;
         }
-        gameObject.SetActive(false);
     }
 
     void Update()
