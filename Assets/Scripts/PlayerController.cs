@@ -28,23 +28,23 @@ public class PlayerController : MonoBehaviour {
                 crouch = !crouch;
             }
 
-            if (Input.GetAxis("Vertical") > 0 && !Input.GetButton("Run"))
+            if (Input.GetButton("Vertical"))
             {
                 walking = true;
+                if (Input.GetButton("Run"))
+                {
+                    running = true;
+                    crouch = false;
+                    walking = false;
+                }
+                else
+                {
+                    running = false;
+                }
             }
             else
             {
                 walking = false;
-            }
-
-            if (Input.GetButton("Run"))
-            {
-                running = true;
-                crouch = false;
-            }
-            else
-            {
-                running = false;
             }
 
             if (crouch == true)
@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour {
             animator.SetBool("isRunning", running);
             animator.SetBool("isCrouching", crouch);
             animator.SetBool("isWalking", walking);
+            animator.SetFloat("walk", Input.GetAxis("Vertical"));
 
             LR = speed * Input.GetAxis("Horizontal");
             FB = speed * Input.GetAxis("Vertical");
