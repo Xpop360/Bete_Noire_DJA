@@ -5025,7 +5025,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -138101529
+  randomSeed: -2067639883
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -15105,7 +15105,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.73
+      value: 5.29
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.y
@@ -15133,7 +15133,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalScale.x
@@ -15149,7 +15149,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1423734665388644, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_Name
-      value: Point (3)
+      value: Point (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
@@ -15417,6 +15417,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.size
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4590507215782958, guid: 5df44a4ee2172f445a48f2c652e0256b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.005854845
@@ -15448,6 +15453,41 @@ Prefab:
     - target: {fileID: 4590507215782958, guid: 5df44a4ee2172f445a48f2c652e0256b, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: df835b2f155b89040af11c1a93bf0488, type: 3}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[0].name
+      value: Thunder
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ea8de716d5f03594db5a6b27976255ae, type: 3}
+    - target: {fileID: 114263406095185454, guid: 5df44a4ee2172f445a48f2c652e0256b,
+        type: 2}
+      propertyPath: sounds.Array.data[1].name
+      value: Whistle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5df44a4ee2172f445a48f2c652e0256b, type: 2}
@@ -20756,7 +20796,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalScale.x
@@ -20772,7 +20812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1423734665388644, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_Name
-      value: Point (2)
+      value: Point (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
@@ -23935,9 +23975,9 @@ Transform:
   - {fileID: 594740313}
   - {fileID: 666823568}
   - {fileID: 571614258}
+  - {fileID: 391594970}
   - {fileID: 1704644000}
   - {fileID: 704310181}
-  - {fileID: 391594970}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34910,7 +34950,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.79
+      value: 4.44
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.y
@@ -34918,7 +34958,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.41
+      value: -5.19
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalRotation.x
@@ -34938,7 +34978,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4339856896041566, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_LocalScale.x
@@ -34954,7 +34994,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1423734665388644, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}
       propertyPath: m_Name
-      value: Point (1)
+      value: Point (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22af3d59b134ae647a88642b8e488e40, type: 2}

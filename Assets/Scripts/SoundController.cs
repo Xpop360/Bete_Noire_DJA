@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using System;
+using UnityEngine.SceneManagement;
 
 public class SoundController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class SoundController : MonoBehaviour
     public static SoundController instance;
     [HideInInspector]
     public bool onceFootsteps = true;
+    SceneManager scenemanager;
 
     // Use this for initialization
     void Awake()
@@ -40,8 +42,6 @@ public class SoundController : MonoBehaviour
 
     void Start()
     {
-        Play("Thunder");
-        Play("Theme1");
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Animator>();
     }
 
