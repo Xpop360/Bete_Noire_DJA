@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
 
     float FB, LR, yaw, rotationSpeed = 2.0f, speed = 0.1f;
 
+    int walk = 0;
+
     [HideInInspector]
     public bool crouch = false, running = false, walking = false;
 
@@ -28,24 +30,44 @@ public class PlayerController : MonoBehaviour {
                 crouch = !crouch;
             }
 
-            if (Input.GetButton("Vertical"))
+            if(Input.GetAxis("Vertical") > 0)
             {
-                walking = true;
                 if (Input.GetButton("Run"))
                 {
-                    running = true;
-                    crouch = false;
-                    walking = false;
+                    walk = 2;
                 }
                 else
                 {
-                    running = false;
+                    walk = 1;
                 }
+            }
+            else if(Input.GetAxis("Vertical") < 0)
+            {
+                walk = -1;
             }
             else
             {
-                walking = false;
+                walk = 0;
             }
+
+            //if (Input.GetButton("Vertical"))
+            //{
+            //    walking = true;
+            //    if (Input.GetButton("Run"))
+            //    {
+            //        running = true;
+            //        crouch = false;
+            //        walking = false;
+            //    }
+            //    else
+            //    {
+            //        running = false;
+            //    }
+            //}
+            //else
+            //{
+            //    walking = false;
+            //}
 
             if (crouch == true)
             {
@@ -58,10 +80,11 @@ public class PlayerController : MonoBehaviour {
                 GetComponent<CharacterController>().height = 1.9f;
             }
 
-            animator.SetBool("isRunning", running);
+            //animator.SetBool("isRunning", running);
             animator.SetBool("isCrouching", crouch);
-            animator.SetBool("isWalking", walking);
-            animator.SetFloat("walk", Input.GetAxis("Vertical"));
+            //animator.SetBool("isWalking", walking);            
+
+            animator.SetInteger("walk", walk);
 
             LR = speed * Input.GetAxis("Horizontal");
             FB = speed * Input.GetAxis("Vertical");
