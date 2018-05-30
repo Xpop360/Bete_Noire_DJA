@@ -5,7 +5,6 @@ using UnityEngine;
 public class LightFlicker : MonoBehaviour
 {
     Light light;
-    Utilities tools;
     bool change;
     public float intervalo;
     float min, med, max;

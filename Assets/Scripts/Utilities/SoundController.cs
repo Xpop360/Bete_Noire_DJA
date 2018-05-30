@@ -9,7 +9,7 @@ public class SoundController : MonoBehaviour
 
     Animator playerAnimator;
 
-    public static SoundController instance;
+    public static SoundController mysoundcontroller;
     [HideInInspector]
     public bool onceFootsteps = true;
     SceneManager scenemanager;
@@ -17,9 +17,9 @@ public class SoundController : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        if(instance==null)
+        if(mysoundcontroller==null)
         {
-            instance = this;
+            mysoundcontroller = this;
             this.tag = "SoundManager";
         }
         else
@@ -47,7 +47,7 @@ public class SoundController : MonoBehaviour
 
     void Update()
     {
-        if (playerAnimator.GetBool("isWalking") && Time.timeScale != 0)//walking footstep sounds
+        if (playerAnimator.GetInteger("walk") == 1 && Time.timeScale != 0)//walking footstep sounds
         {
             //Debug.Log("Sounding Footsteps");
             if (onceFootsteps)
