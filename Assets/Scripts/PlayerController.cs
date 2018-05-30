@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour {
                 if (Input.GetButton("Run"))
                 {
                     walk = 2;
+                    crouch = false;
                 }
                 else
                 {
