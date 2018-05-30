@@ -7,9 +7,9 @@ public class GameOver : MonoBehaviour {
 
     void Update()
     {
-        if (EnemyController.lose)
+        if (SceneController.lost)
         {
-            gameOver.SetActive(EnemyController.lose);
+            gameOver.SetActive(SceneController.lost);
         }
 
         if (GameOverAnimation.end) gameOverUI.SetActive(GameOverAnimation.end);
