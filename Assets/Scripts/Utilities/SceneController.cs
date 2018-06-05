@@ -1,15 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour {
 
     public static bool lost;
+    public static bool win;
 
 	// Use this for initialization
 	void Start () {
         lost = false;
+        win = false;
 	}
 	
 	// Update is called once per frame
@@ -18,5 +18,16 @@ public class SceneController : MonoBehaviour {
         {
             SceneManager.LoadScene("LostMenu");
         }
+        if(win)
+        {
+
+        }
 	}
+
+    public static void LoadLevel1()
+    {
+        SceneManager.LoadScene("Map1");
+        SoundController.StopAll();
+        SoundController.Play("Thunder");
+    }
 }

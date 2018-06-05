@@ -14,7 +14,8 @@ public class SoundController : MonoBehaviour
     public bool onceFootsteps = true;
     SceneManager scenemanager;
 
-    // Use this for initialization
+    public static Sound[] soundinstance;
+
     void Awake()
     {
         if(mysoundcontroller==null)
@@ -43,6 +44,7 @@ public class SoundController : MonoBehaviour
     void Start()
     {
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Animator>();
+        soundinstance = sounds;
     }
 
     void Update()
@@ -63,9 +65,9 @@ public class SoundController : MonoBehaviour
         }
     }
 
-    public void Play(string name)
+    public static void Play(string name)
     {
-        Sound s = Array.Find<Sound>(sounds, sound => sound.name == name);
+        Sound s = Array.Find<Sound>(soundinstance, soundinstance => soundinstance.name == name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " is null");
@@ -74,14 +76,29 @@ public class SoundController : MonoBehaviour
         s.source.Play();
     }
 
-    public void Stop(string name)
+    Sound find(string name)
     {
         Sound s = Array.Find<Sound>(sounds, sound => sound.name == name);
+        return s;
+    }
+
+    public static void Stop(string name)
+    {
+        Sound s = Array.Find<Sound>(soundinstance, soundinstance => soundinstance.name == name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " is null");
             return;
         }
         s.source.Stop();
+    }
+
+    public static void StopAll()
+    {
+        AudioSource[] audioSources = GameObject.FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource a in audioSources)
+        {
+            a.Stop();
+        }
     }
 }
