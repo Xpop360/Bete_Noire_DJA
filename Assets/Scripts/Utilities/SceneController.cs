@@ -5,6 +5,7 @@ public class SceneController : MonoBehaviour {
 
     public static bool lost;
     public static bool win;
+    public static int level;
 
 	// Use this for initialization
 	void Start () {
@@ -29,5 +30,6 @@ public class SceneController : MonoBehaviour {
         SceneManager.LoadScene("Map1");
         SoundController.StopAll();
         SoundController.Play("Thunder");
+        level = 1;
     }
 }

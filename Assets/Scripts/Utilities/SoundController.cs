@@ -18,6 +18,8 @@ public class SoundController : MonoBehaviour
 
     void Awake()
     {
+        soundinstance = new Sound[sounds.Length];
+
         if(mysoundcontroller==null)
         {
             mysoundcontroller = this;
@@ -39,29 +41,32 @@ public class SoundController : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
+        soundinstance = sounds;
     }
 
     void Start()
     {
         playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Animator>();
-        soundinstance = sounds;
     }
 
     void Update()
     {
-        if (playerAnimator.GetInteger("walk") == 1 && Time.timeScale != 0)//walking footstep sounds
+        if (SceneController.level == 1)
         {
-            //Debug.Log("Sounding Footsteps");
-            if (onceFootsteps)
+            if (playerAnimator.GetInteger("walk") == 1 && Time.timeScale != 0)//walking footstep sounds
             {
-                Play("Footsteps1");
-                onceFootsteps = false;
+                //Debug.Log("Sounding Footsteps");
+                if (onceFootsteps)
+                {
+                    Play("Footsteps1");
+                    onceFootsteps = false;
+                }
             }
-        }
-        else
-        {
-            Stop("Footsteps1");
-            onceFootsteps = true;
+            else
+            {
+                Stop("Footsteps1");
+                onceFootsteps = true;
+            }
         }
     }
 
@@ -74,12 +79,6 @@ public class SoundController : MonoBehaviour
             return;
         }
         s.source.Play();
-    }
-
-    Sound find(string name)
-    {
-        Sound s = Array.Find<Sound>(sounds, sound => sound.name == name);
-        return s;
     }
 
     public static void Stop(string name)
