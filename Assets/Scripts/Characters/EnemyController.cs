@@ -22,6 +22,7 @@ public class EnemyController : MonoBehaviour
     [HideInInspector]
     public GameObject[] intPoints;
     [HideInInspector]
+    public static bool lose = false;
 
     void Start()
     {
@@ -70,7 +71,7 @@ public class EnemyController : MonoBehaviour
                 //attack
                 FaceTarget();
                 Debug.Log("I'm here");
-                SceneController.lost = true;
+                lose = true;
                 animator.SetInteger("Speed", 0);
             }
         }
