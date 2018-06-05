@@ -149,6 +149,12 @@ MonoBehaviour:
     volume: 0.4
     pitch: 1
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: ab22a8b95ce9e6d49879018f61cb3534, type: 3}
+    name: Lost
+    loop: 1
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
   onceFootsteps: 1
 --- !u!114 &114435827571765648
 MonoBehaviour:

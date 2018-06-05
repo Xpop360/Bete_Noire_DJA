@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     CharacterController player;
     Transform lookAt;
 
-    bool onceFootsteps;
+    bool onceFootsteps, oncerunning;
 
     float FB, LR, yaw, rotationSpeed = 2.0f, speed = 0.1f;
 
@@ -21,19 +21,20 @@ public class PlayerController : MonoBehaviour {
     {
         player = GetComponent<CharacterController>();
         lookAt = GameObject.FindGameObjectWithTag("Player").transform;
-        onceFootsteps = false;
+        onceFootsteps = true;
+        oncerunning = true;
     }
 
     void Update()
     {
-        if(!SceneController.lost)
+        if (!SceneController.lost)
         {
             if (Input.GetButtonDown("Crouch"))
             {
                 crouch = !crouch;
             }
 
-            if(Input.GetAxis("Vertical") > 0)
+            if (Input.GetAxis("Vertical") > 0)
             {
                 if (Input.GetButton("Run"))
                 {
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour {
                     walk = 1;
                 }
             }
-            else if(Input.GetAxis("Vertical") < 0)
+            else if (Input.GetAxis("Vertical") < 0)
             {
                 walk = -1;
             }
@@ -105,7 +106,7 @@ public class PlayerController : MonoBehaviour {
 
             //sounds
             //walking
-            if(walk==1 && Time.timeScale!=0)
+            if ((walk == 1 || walk == -1) && Time.timeScale != 0)
             {
                 if (onceFootsteps)
                 {
@@ -115,8 +116,22 @@ public class PlayerController : MonoBehaviour {
             }
             else
             {
-                SoundController.Stop("Footsteps1");
                 onceFootsteps = true;
+                SoundController.Stop("Footsteps1");
+            }
+            //running
+            if ((walk == 2) && Time.timeScale != 0)
+            {
+                if (oncerunning)
+                {
+                    SoundController.Play("Running3");
+                    oncerunning = false;
+                }
+            }
+            else
+            {
+                oncerunning = true;
+                SoundController.Stop("Running3");
             }
         }
     }

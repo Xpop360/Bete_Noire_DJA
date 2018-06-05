@@ -32,4 +32,12 @@ public class SceneController : MonoBehaviour {
         SoundController.Play("Thunder");
         level = 1;
     }
+
+    //Põe aki o gameover! antes do que ja esta
+    public static void GameOver()
+    {
+        SoundController.StopAll();
+        SoundController.Play("Lost");
+        level = 0;
+    }
 }
