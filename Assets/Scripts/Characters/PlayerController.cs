@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
     CharacterController player;
     Transform lookAt;
 
+    bool onceFootsteps;
+
     float FB, LR, yaw, rotationSpeed = 2.0f, speed = 0.1f;
 
     int walk = 0;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour {
     {
         player = GetComponent<CharacterController>();
         lookAt = GameObject.FindGameObjectWithTag("Player").transform;
+        onceFootsteps = false;
     }
 
     void Update()
@@ -99,6 +102,22 @@ public class PlayerController : MonoBehaviour {
             movement = transform.rotation * movement;
 
             player.Move(movement * Time.deltaTime);
+
+            //sounds
+            //walking
+            if(walk==1 && Time.timeScale!=0)
+            {
+                if (onceFootsteps)
+                {
+                    SoundController.Play("Footsteps1");
+                    onceFootsteps = false;
+                }
+            }
+            else
+            {
+                SoundController.Stop("Footsteps1");
+                onceFootsteps = true;
+            }
         }
     }
 

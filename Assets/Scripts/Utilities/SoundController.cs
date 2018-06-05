@@ -46,28 +46,7 @@ public class SoundController : MonoBehaviour
 
     void Start()
     {
-        playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Animator>();
-    }
 
-    void Update()
-    {
-        if (SceneController.level == 1)
-        {
-            if (playerAnimator.GetInteger("walk") == 1 && Time.timeScale != 0)//walking footstep sounds
-            {
-                //Debug.Log("Sounding Footsteps");
-                if (onceFootsteps)
-                {
-                    Play("Footsteps1");
-                    onceFootsteps = false;
-                }
-            }
-            else
-            {
-                Stop("Footsteps1");
-                onceFootsteps = true;
-            }
-        }
     }
 
     public static void Play(string name)
