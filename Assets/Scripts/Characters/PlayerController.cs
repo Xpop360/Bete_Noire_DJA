@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(!EnemyController.lose)
+        if(!SceneController.lost)
         {
             if (Input.GetButtonDown("Crouch"))
             {
