@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
 
-    public GameObject gameOver, gameOverUI;
-    public Animator animator;
-
+    public GameObject text, gameOverUI;
+    
     void Update()
     {
-        if (SceneController.lost)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            gameOver.SetActive(SceneController.lost);
+            text.GetComponent<Text>().text = "game over";
+            text.GetComponent<Text>().color = Color.red;
+
+            text.SetActive(true);
         }
 
-        if (GameOverAnimation.end) gameOverUI.SetActive(GameOverAnimation.end);
+        gameOverUI.SetActive(GameOverAnimation.end);
     }
 }

@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if (!SceneController.lost)
+        if (!SceneController.lost && !SceneController.win)
         {
             if (Input.GetButtonDown("Crouch"))
             {
@@ -133,6 +133,14 @@ public class PlayerController : MonoBehaviour {
                 oncerunning = true;
                 SoundController.Stop("Running3");
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("GameOver"))
+        {
+            SceneController.win = true;
         }
     }
 

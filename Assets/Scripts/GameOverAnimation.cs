@@ -7,7 +7,7 @@ public class GameOverAnimation : MonoBehaviour {
 
     void Update()
     {
-        animator.SetTrigger("gameover");
+        animator.SetTrigger("FadeIn");
     }
 
     public void AnimationComplete()

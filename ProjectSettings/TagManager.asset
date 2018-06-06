@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - PlayerTrigger
   - PuzzleUI
+  - GameOver
   layers:
   - Default
   - TransparentFX

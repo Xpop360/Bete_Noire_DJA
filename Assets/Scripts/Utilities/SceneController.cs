@@ -1,27 +1,37 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneController : MonoBehaviour {
 
-    public static bool lost;
-    public static bool win;
+    public static bool lost, win;
     public static int level;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject text, gameOverUI;
+
+    // Use this for initialization
+    void Start () {
         lost = false;
         win = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(lost)
+        if(lost || win)
         {
-            SceneManager.LoadScene("LostMenu");
-        }
-        if(win)
-        {
+            if (lost)
+            {
+                text.GetComponent<Text>().text = "game over";
+                text.GetComponent<Text>().color = Color.red;
+            }
+            if (win)
+            {
+                text.GetComponent<Text>().text = "a winner is you";
+                text.GetComponent<Text>().color = Color.green;
+            }
 
+            text.SetActive(true);
+            gameOverUI.SetActive(GameOverAnimation.end);
         }
 	}
 

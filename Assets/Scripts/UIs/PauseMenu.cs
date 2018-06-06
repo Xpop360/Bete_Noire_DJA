@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour {
 
 	void Update ()
     {
-		if(Input.GetKeyDown(KeyCode.Escape) && !GameOverAnimation.end)
+		if(Input.GetKeyDown(KeyCode.Escape) && !SceneController.lost && !SceneController.win)
             if (gamePause)
             {
                 Resume();
