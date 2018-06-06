@@ -49,8 +49,8 @@ public class CameraFollow : MonoBehaviour {
             clap = minY;
             Look.x = minY;
         }
-        
-        if (!PauseMenu.gamePause && !SceneController.lost && !SceneController.win)
+
+        if (!PauseMenu.gamePause && !SceneController.lost && !SceneController.win && Time.timeScale != 0)
         {
             transform.rotation = Quaternion.Euler(Look);
         }

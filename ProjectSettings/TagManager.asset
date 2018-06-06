@@ -13,6 +13,7 @@ TagManager:
   - PlayerTrigger
   - PuzzleUI
   - GameOver
+  - Clue
   layers:
   - Default
   - TransparentFX

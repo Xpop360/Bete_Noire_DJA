@@ -55,25 +55,6 @@ public class PlayerController : MonoBehaviour {
                 walk = 0;
             }
 
-            //if (Input.GetButton("Vertical"))
-            //{
-            //    walking = true;
-            //    if (Input.GetButton("Run"))
-            //    {
-            //        running = true;
-            //        crouch = false;
-            //        walking = false;
-            //    }
-            //    else
-            //    {
-            //        running = false;
-            //    }
-            //}
-            //else
-            //{
-            //    walking = false;
-            //}
-
             if (crouch == true)
             {
                 GetComponent<CharacterController>().center = new Vector3(0, 0.5f, 0);
@@ -98,7 +79,10 @@ public class PlayerController : MonoBehaviour {
 
             Vector3 movement = new Vector3(LR, 0.0f, FB);
 
-            if (!PauseMenu.gamePause) transform.Rotate(new Vector3(0.0f, yaw, 0.0f));
+            if (!PauseMenu.gamePause && Time.timeScale != 0f)
+            {
+                transform.Rotate(new Vector3(0.0f, yaw, 0.0f));
+            }
 
             movement = transform.rotation * movement;
 
