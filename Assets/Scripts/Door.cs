@@ -8,12 +8,14 @@ public class Door : MonoBehaviour
     Interactable inter;
     public bool locked;
     Inventory inv;
+    AudioSource a;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         inter = GetComponentInParent<Interactable>();
         inv = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+        a = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -48,6 +50,9 @@ public class Door : MonoBehaviour
     public void DisableCollider()
     {
         GetComponentInChildren<BoxCollider>().enabled = false;
+        a.enabled = false;
+        a.enabled = true;
+        
     }
 
     public void EnableCollider()
