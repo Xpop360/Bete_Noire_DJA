@@ -13,5 +13,6 @@ public class GameOverAnimation : MonoBehaviour {
     public void AnimationComplete()
     {
         end = true;
+        Time.timeScale = 0;
     }
 }
