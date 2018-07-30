@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     bool onceFootsteps, oncerunning;
 
-    float FB, LR, yaw, rotationSpeed = 2.0f, speed = 0.1f;
+    float FB, LR, yaw, rotationSpeed = 5.0f, speed = 0.1f;
 
     int walk = 0;
 

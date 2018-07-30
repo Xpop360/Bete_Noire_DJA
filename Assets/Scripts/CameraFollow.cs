@@ -4,7 +4,7 @@ public class CameraFollow : MonoBehaviour {
 
     Transform target;
 
-    float clap, speed = 2.0f;
+    float clap, speed = 5.0f;
     float maxY, minY;
     public Vector3 cameraCrouchOffSet = Vector3.zero;
 
