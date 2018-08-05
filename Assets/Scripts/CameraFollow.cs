@@ -13,9 +13,9 @@ public class CameraFollow : MonoBehaviour {
     
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         Player = GameObject.FindGameObjectWithTag("Player");
         target = Player.transform;
-        Cursor.lockState = CursorLockMode.Locked;
         transform.rotation = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Transform>().rotation;
         maxY = 50;
         minY = -90;

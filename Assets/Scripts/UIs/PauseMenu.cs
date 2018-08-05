@@ -17,19 +17,21 @@ public class PauseMenu : MonoBehaviour {
             {
                 Pause();
             }
-	}
+
+        pauseMenuUI.SetActive(gamePause);
+    }
 
     void Pause()
     {
-        gamePause = true;
-        pauseMenuUI.SetActive(gamePause);
+        Cursor.lockState = CursorLockMode.Confined;
+        gamePause = true;        
         Time.timeScale = 0f;
     }
 
     public void Resume()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         gamePause = false;
-        pauseMenuUI.SetActive(gamePause);
         Time.timeScale = 1f;
     }
 
