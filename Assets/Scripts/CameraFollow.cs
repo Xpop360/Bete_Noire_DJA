@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour {
     
     void Start()
     {
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Player = GameObject.FindGameObjectWithTag("Player");
         target = Player.transform;
