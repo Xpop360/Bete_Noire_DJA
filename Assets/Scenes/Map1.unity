@@ -4818,7 +4818,7 @@ Prefab:
         type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555937105}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8db978d340884e24ba91550ec4002854, type: 2}
   m_IsPrefabAsset: 0
@@ -11827,7 +11827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.4
-  player: {fileID: 0}
+  player: {fileID: 555937105}
   inRadius: 0
 --- !u!23 &875070406
 MeshRenderer:
@@ -12638,7 +12638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 0.6
-  player: {fileID: 0}
+  player: {fileID: 555937105}
   inRadius: 0
 --- !u!114 &903293874
 MonoBehaviour:
@@ -24715,7 +24715,7 @@ Prefab:
         type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 555937105}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68afbe749ad3ac94d8b30b1a93505d1f, type: 2}
   m_IsPrefabAsset: 0
