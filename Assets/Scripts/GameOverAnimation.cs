@@ -14,5 +14,7 @@ public class GameOverAnimation : MonoBehaviour {
     {
         end = true;
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
