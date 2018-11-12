@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MMTrigger : MonoBehaviour {
 
-    public static bool end = false;
+    public GameObject UI;
 
     public void AnimationComplete()
     {
-        end = true;
+        UI.SetActive(true);
     }
 }

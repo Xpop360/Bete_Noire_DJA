@@ -3,17 +3,28 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 
-    public GameObject title, buttons;
+    Animator a;
+
+    public GameObject mainTitle, mainButtons;
+
+    private void Start()
+    {
+        a = GetComponentInChildren<Animator>();
+    }
 
     public void Update()
     {
-        title.gameObject.SetActive(true);
-        buttons.SetActive(MMTrigger.end);
+        mainTitle.SetActive(true);
     }
 
     public void StartGame()
     {
         SceneController.LoadLevel1();
+    }
+
+    public void Options()
+    {
+        mainTitle.SetActive(false);
     }
 
     public void Close()
